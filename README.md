@@ -6,9 +6,9 @@ Tired apps with good graphics and sound? Expirence nostalgie about good old days
 
 You can do it with almost any app:
 
-!(1.png)
-!(2.png)
-!(3.png)
+![a](1.png)
+![a](2.png)
+![a](3.png)
 
 # Prerequrements
 
@@ -34,12 +34,12 @@ Download APK via any service like apk-dl, evozi downloader or use apps like Racc
 
 You can also extract APK from your device:
 
-```# adb shell pm list packages | grep someapp
-package:com.somecompany.someapp
-# adb shell pm path com.somecompany.someapp
-package:/data/app/com.somecompany.someapp-1.apk
-# adb pull /data/app/com.somecompany.someapp-1.apk
-3806 KB/s (5538818 bytes in 1.421s)```
+        # adb shell pm list packages | grep someapp
+        package:com.somecompany.someapp
+        # adb shell pm path com.somecompany.someapp
+        package:/data/app/com.somecompany.someapp-1.apk
+        # adb pull /data/app/com.somecompany.someapp-1.apk
+        3806 KB/s (5538818 bytes in 1.421s)
 
 ## Step 2: repacking
 
@@ -57,17 +57,17 @@ If in your APP have some sensive data (opened levels and top scores), you will l
 
 ## Step 4: Uninstall original app
 
-```# adb com.somecompany.someapp
-Success```
+        # adb com.somecompany.someapp
+        Success
 
 ## Step 5: Install repacked version
 
 Result will be saved in shit_oldfague.apk, so install it
 
-```# adb install shit_oldfague.apk
-4073 KB/s (5457196 bytes in 1.308s)
-        pkg: /data/local/tmp/shit_oldfague.apk
-Success```
+        # adb install shit_oldfague.apk
+        4073 KB/s (5457196 bytes in 1.308s)
+                pkg: /data/local/tmp/shit_oldfague.apk
+        Success
 
 And now enjoy new game!
 
