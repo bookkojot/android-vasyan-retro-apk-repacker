@@ -57,7 +57,7 @@ If in your APP have some sensive data (opened levels and top scores), you will l
 
 ## Step 4: Uninstall original app
 
-        # adb com.somecompany.someapp
+        # adb uninstall com.somecompany.someapp
         Success
 
 ## Step 5: Install repacked version
